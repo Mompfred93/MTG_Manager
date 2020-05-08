@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>sammlung</class>
+ <widget class="QMainWindow" name="sammlung">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>654</height>
+    <height>849</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
       <item>
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="6" column="0">
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="btn_sammlung_zum_deck_hinzufuegen">
           <property name="text">
            <string>Zum Deck hinzufügen</string>
           </property>
@@ -85,36 +85,10 @@
           </property>
          </spacer>
         </item>
-        <item row="4" column="0">
-         <widget class="QListView" name="listView"/>
-        </item>
         <item row="4" column="2">
          <layout class="QGridLayout" name="gridLayout_4">
-          <item row="18" column="0">
-           <spacer name="verticalSpacer_4">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="11" column="0">
-           <widget class="QLabel" name="label_7">
-            <property name="text">
-             <string>Gesamt</string>
-            </property>
-           </widget>
-          </item>
-          <item row="11" column="1">
-           <widget class="QSpinBox" name="spinBox"/>
-          </item>
-          <item row="6" column="0">
-           <widget class="QCheckBox" name="checkBox_3">
+          <item row="12" column="0">
+           <widget class="QCheckBox" name="chkbox_sammlung_exklusiv">
             <property name="toolTip">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ist die Karte einfarbig?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
@@ -123,7 +97,7 @@
             </property>
            </widget>
           </item>
-          <item row="21" column="2">
+          <item row="28" column="2">
            <spacer name="horizontalSpacer_4">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -136,218 +110,35 @@
             </property>
            </spacer>
           </item>
-          <item row="2" column="3">
-           <widget class="QCheckBox" name="checkBox_6">
+          <item row="25" column="0">
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="8" column="3">
+           <widget class="QCheckBox" name="chkbox_sammlung_farbeS">
             <property name="text">
              <string>Schwarz</string>
             </property>
            </widget>
           </item>
-          <item row="17" column="0" colspan="4">
-           <widget class="Line" name="line_3">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QCheckBox" name="checkBox_5">
+          <item row="17" column="0">
+           <widget class="QLabel" name="label_7">
             <property name="text">
-             <string>Grün</string>
+             <string>Gesamt</string>
             </property>
            </widget>
           </item>
-          <item row="19" column="0">
-           <widget class="QLabel" name="label_8">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <underline>true</underline>
-             </font>
-            </property>
-            <property name="text">
-             <string>Sprache</string>
-            </property>
-           </widget>
-          </item>
-          <item row="20" column="0">
-           <widget class="QCheckBox" name="checkBox_10">
-            <property name="text">
-             <string>englisch</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="0" colspan="4">
-           <widget class="Line" name="line_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="20" column="1">
-           <widget class="QCheckBox" name="checkBox_11">
-            <property name="text">
-             <string>deutsch</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QCheckBox" name="checkBox_4">
-            <property name="text">
-             <string>Blau</string>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="0">
-           <widget class="QLabel" name="label_6">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <underline>true</underline>
-             </font>
-            </property>
-            <property name="text">
-             <string>Mana-Kosten</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="0">
-           <spacer name="verticalSpacer">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="15" column="0">
-           <widget class="QCheckBox" name="checkBox_9">
-            <property name="text">
-             <string>Schwarz</string>
-            </property>
-           </widget>
-          </item>
-          <item row="21" column="0">
-           <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="2" column="0">
-           <widget class="QCheckBox" name="checkBox">
-            <property name="text">
-             <string>Rot</string>
-            </property>
-           </widget>
-          </item>
-          <item row="21" column="3">
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="21" column="1">
-           <spacer name="horizontalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="13" column="0">
-           <widget class="QCheckBox" name="checkBox_7">
-            <property name="text">
-             <string>Grün</string>
-            </property>
-           </widget>
-          </item>
-          <item row="14" column="0">
-           <widget class="QCheckBox" name="checkBox_8">
-            <property name="text">
-             <string>Blau</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_3">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <underline>true</underline>
-             </font>
-            </property>
-            <property name="text">
-             <string>Farbe</string>
-            </property>
-           </widget>
-          </item>
-          <item row="16" column="0">
-           <spacer name="verticalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="12" column="0">
-           <widget class="QCheckBox" name="checkBox_2">
-            <property name="text">
-             <string>Rot</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="0">
-           <spacer name="verticalSpacer_5">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="15" column="1">
-           <widget class="QSpinBox" name="spinBox_5"/>
-          </item>
-          <item row="13" column="1">
-           <widget class="QSpinBox" name="spinBox_3"/>
-          </item>
-          <item row="14" column="1">
-           <widget class="QSpinBox" name="spinBox_4"/>
-          </item>
-          <item row="12" column="1">
-           <widget class="QSpinBox" name="spinBox_2"/>
+          <item row="17" column="1">
+           <widget class="QSpinBox" name="spinbox_sammlung_kostengesamt"/>
           </item>
           <item row="0" column="0">
            <spacer name="verticalSpacer_6">
@@ -362,17 +153,302 @@
             </property>
            </spacer>
           </item>
+          <item row="27" column="0">
+           <widget class="QCheckBox" name="chkbox_sammlung_spracheEn">
+            <property name="text">
+             <string>englisch</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QCheckBox" name="chkbox_sammlung_farbeG">
+            <property name="text">
+             <string>Grün</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="1">
+           <widget class="QSpinBox" name="spinbox_sammlung_kostenR"/>
+          </item>
+          <item row="14" column="0" colspan="4">
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="26" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>Sprache</string>
+            </property>
+           </widget>
+          </item>
+          <item row="27" column="1">
+           <widget class="QCheckBox" name="chkbox_sammlung_spracheDe">
+            <property name="text">
+             <string>deutsch</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="1">
+           <widget class="QSpinBox" name="spinbox_sammlung_kostenG"/>
+          </item>
+          <item row="20" column="1">
+           <widget class="QSpinBox" name="spinbox_sammlung_kostenB"/>
+          </item>
+          <item row="21" column="1">
+           <widget class="QSpinBox" name="spinbox_sammlung_kostenS"/>
+          </item>
+          <item row="24" column="0" colspan="4">
+           <widget class="Line" name="line_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="0">
+           <widget class="QCheckBox" name="chkbox_sammlung__manaB">
+            <property name="text">
+             <string>Blau</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="2">
+           <widget class="QCheckBox" name="chkbox_sammlung_farbeB">
+            <property name="text">
+             <string>Blau</string>
+            </property>
+           </widget>
+          </item>
+          <item row="21" column="0">
+           <widget class="QCheckBox" name="chkbox_sammlung__manaS">
+            <property name="text">
+             <string>Schwarz</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mana-Kosten</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="0">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="28" column="3">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>Farbe</string>
+            </property>
+           </widget>
+          </item>
+          <item row="28" column="0">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="13" column="0">
+           <spacer name="verticalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="19" column="0">
+           <widget class="QCheckBox" name="chkbox_sammlung__manaG">
+            <property name="text">
+             <string>Grün</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QCheckBox" name="chkbox_sammlung_farbeR">
+            <property name="text">
+             <string>Rot</string>
+            </property>
+           </widget>
+          </item>
+          <item row="23" column="0">
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="28" column="1">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="22" column="0">
+           <widget class="QCheckBox" name="chkbox_sammlung__manaW">
+            <property name="text">
+             <string>Weiss</string>
+            </property>
+           </widget>
+          </item>
+          <item row="22" column="1">
+           <widget class="QSpinBox" name="spinbox_sammlung_kostenW"/>
+          </item>
+          <item row="18" column="0">
+           <widget class="QCheckBox" name="chkbox_sammlung__manaR">
+            <property name="text">
+             <string>Rot</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="4">
+           <widget class="QCheckBox" name="chkbox_sammlung_farbeW">
+            <property name="text">
+             <string>Weiss</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="3">
+           <widget class="QLineEdit" name="line_edit_sammlung_name"/>
+          </item>
+          <item row="4" column="0">
+           <spacer name="verticalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="0">
+           <spacer name="verticalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="0" colspan="5">
+           <widget class="Line" name="line_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="verticalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
          </layout>
         </item>
         <item row="5" column="0">
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="btn_sammlung_zur_sammlung_hinzufuegen">
           <property name="text">
            <string>Zur Sammlung hinzufügen</string>
           </property>
          </widget>
         </item>
         <item row="7" column="0">
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="btn_sammlung_karte_bearbeiten">
           <property name="text">
            <string>Karte bearbeiten</string>
           </property>
@@ -395,6 +471,16 @@
          <widget class="Line" name="line_4">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QListWidget" name="list_sammlung_gefundene_karten">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -429,7 +515,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>30</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuDatei">
